@@ -1790,18 +1790,19 @@ input, select, textarea {
 		padding: 9em 0 6em 0;
 	}
 
-		#banner h2 {
-			border: solid 6px rgba(2, 2, 2, 0.25);
-			border-left: 0;
-			border-right: 0;
-			color: #000000;
-			color: rgba(0, 0, 0, 0.75);
-			font-size: 2.35em;
-			font-weight: 1000;
-			line-height: 1.3em;
-			margin: 0 0 1.5em 0;
-		}
+		 #banner h2 {
+	
+			font-size: 3rem;
+			font-weight: 900;          /* Ultra bold */
+			text-transform: uppercase; /* Makes it punchy and cinematic */
+			letter-spacing: -0.5px;    /* Tighter tracking looks cleaner at large sizes */
+			color: #ffffff;            /* Pure white base */
+			text-align: center;
+			margin-bottom: 0.3em;
 
+			text-shadow: 0 0 10px rgb(11, 11, 10),
+						0 2px 4px rgba(0, 0, 0, 0.8);
+			}
 			#banner h2 strong {
 				font-weight: 1000;
 				color: inherit;
@@ -1826,18 +1827,17 @@ input, select, textarea {
 			}
 
 		#banner p {
-			text-transform: uppercase;
-			color: #fff;
-			color: rgba(255, 255, 255, 0.75);
-			font-size: 1.5em;
-			font-weight: 700;
-			line-height: 1.3em;
-			letter-spacing: 0.04em;
-			float: left;
-			text-align: right;
-			width: 60%;
-			line-height: 1.5em;
-			margin: 0;
+			font-size: 1rem;
+			font-weight: 900;          /* Ultra bold */
+			text-transform: uppercase; /* Makes it punchy and cinematic */
+			letter-spacing: -0.5px;    /* Tighter tracking looks cleaner at large sizes */
+			color: #ffffff;            /* Pure white base */
+			text-align: center;
+			margin-bottom: 0.3em;
+			font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			text-shadow: 0 00px rgb(11, 11, 10),
+						0 2px 4px rgba(0, 0, 0, 0.8);
+		
 		}
 
 /* Sidebar */
@@ -1882,7 +1882,7 @@ input, select, textarea {
 
 		.wrapper.style1 {
 			position: relative;
-			text-shadow: 1px 1px 0 #fff;
+			text-shadow: 1px 1px 0 	#ffffff;
 			background-color: #fff;
 			background-image: url("images/bg03.png"), url("images/bg04.png"), url("images/bg02.png");
 			background-repeat: no-repeat, no-repeat, repeat;
@@ -1905,7 +1905,7 @@ input, select, textarea {
 	#header {
 		position: relative;
 		border-radius: 10px;
-		background: rgba(255, 255, 255, 0.1);
+		background: rgba(201, 200, 200, 0.1);
 		padding: 0.75em;
 		margin-bottom: 0;
 	}
@@ -1924,13 +1924,19 @@ input, select, textarea {
 			text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
 		}
 
-		#header h1 {
+		#header img {
 			position: absolute;
 			left: 1.75em;
 			top: 50%;
-			margin-top: -0.65em;
-			font-size: 1.5em;
-			color: #fff;
+			
+			/* 1. Define the height you want the image to be inside the navbar */
+			height: 4em; 
+			
+			/* 2. The trick: Exactly negative half of the height to center it */
+			margin-top: -1.8em; 
+			
+			/* 3. Ensures the image scales cleanly without stretching horizontally */
+			width: auto; 
 		}
 
 /* Footer */
