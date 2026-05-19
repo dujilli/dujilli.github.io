@@ -29,6 +29,10 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+.underline {
+  text-decoration: underline;
+}
+
 body {
 	line-height: 1;
 }
@@ -110,14 +114,13 @@ input, select, textarea {
 	}
 
 	a {
-		color: inherit;
-		text-decoration: underline;
+	color: rgb(0, 0, 0); 
 	}
 
-		a:hover {
-			text-decoration: none;
-		}
-
+	a:hover {
+	color: rgb(207, 132, 170); 
+	}
+	
 	h1, h2, h3, h4, h5, h6 {
 		text-transform: uppercase;
 		font-weight: 800;
@@ -1256,14 +1259,14 @@ input, select, textarea {
 	}
 
 	header.major {
-		border-bottom: solid 1px #dbdbdb;
+		border-bottom: solid 1px #be7fa9;
 		margin: 0 0 3em 0;
 	}
 
 		header.major:after {
 			content: '';
 			display: block;
-			border-top: solid 1px #dbdbdb;
+			border-top: solid 1px #be7fa9;
 			height: 8px;
 		}
 
@@ -1443,7 +1446,7 @@ input, select, textarea {
 		-webkit-appearance: none;
 		position: relative;
 		display: inline-block;
-		background-color: #4091bf;
+		background-color: #af80a7;
 		border-radius: 8px;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.35), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.35);
 		text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
@@ -1476,7 +1479,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #50a1cf;
+			background-color: #8b6584;
 		}
 
 		input[type="button"]:active,
@@ -1793,14 +1796,14 @@ input, select, textarea {
 		 #banner h2 {
 	
 			font-size: 3rem;
-			font-weight: 900;          /* Ultra bold */
-			text-transform: uppercase; /* Makes it punchy and cinematic */
-			letter-spacing: -0.5px;    /* Tighter tracking looks cleaner at large sizes */
-			color: #ffffff;            /* Pure white base */
+			font-weight: 900;         
+			text-transform: uppercase; 
+			letter-spacing: -0.5px;    
+			color: #ffffff;            
 			text-align: center;
 			margin-bottom: 0.3em;
 
-			text-shadow: 0 0 10px rgb(11, 11, 10),
+			text-shadow: 0 0 10px rgb(14, 14, 11),
 						0 2px 4px rgba(0, 0, 0, 0.8);
 			}
 			#banner h2 strong {
@@ -2431,5 +2434,28 @@ input, select, textarea {
 				margin-top: 0;
 				padding: 3em 0 1em 0;
 			}
+
+	}
+
+	.pop-image {
+	transition: transform 0.3s ease;
+	cursor: pointer;
+	}
+
+	.pop-image:hover {
+	transform: scale(1.1); 
+	z-index: 10; 
+	}
+
+	.footer-right-side {
+    text-align: right;
+	}
+
+	.footer-right-side section {
+		text-align: right;
+	}
+
+	.footer-right-side footer {
+		text-align: right;
 
 	}
