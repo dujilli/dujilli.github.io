@@ -1833,10 +1833,10 @@ input, select, textarea {
 
 		#banner p {
 			font-size: 1rem;
-			font-weight: 900;          /* Ultra bold */
-			text-transform: uppercase; /* Makes it punchy and cinematic */
-			letter-spacing: -0.5px;    /* Tighter tracking looks cleaner at large sizes */
-			color: #ffffff;            /* Pure white base */
+			font-weight: 900;          
+			text-transform: uppercase; 
+			letter-spacing: -0.5px;    
+			color: #ffffff;            
 			text-align: center;
 			margin-bottom: 0.3em;
 			font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -1945,14 +1945,11 @@ input, select, textarea {
 			position: absolute;
 			left: 1.75em;
 			top: 50%;
-			
-			/* 1. Define the height you want the image to be inside the navbar */
+		
 			height: 4em; 
 			
-			/* 2. The trick: Exactly negative half of the height to center it */
 			margin-top: -1.8em; 
 			
-			/* 3. Ensures the image scales cleanly without stretching horizontally */
 			width: auto; 
 		}
 
