@@ -1387,6 +1387,8 @@ input, select, textarea {
 		.image img {
 			display: block;
 			width: 100%;
+			max-width: 100%; 
+			height: auto;     
 			border-radius: 8px;
 		}
 
@@ -1446,7 +1448,7 @@ input, select, textarea {
 		-webkit-appearance: none;
 		position: relative;
 		display: inline-block;
-		background-color: #af80a7;
+		background-color: #e276a9;
 		border-radius: 8px;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.35), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.35);
 		text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
@@ -1479,7 +1481,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #8b6584;
+			background-color: #f1bae7;
 		}
 
 		input[type="button"]:active,
@@ -1886,17 +1888,29 @@ input, select, textarea {
 		.wrapper.style1 {
 			position: relative;
 			text-shadow: 1px 1px 0 	#ffffff;
-			background-color: #fff;
+			background-color: #fff1f9;
 			background-image: url("images/bg03.png"), url("images/bg04.png"), url("images/bg02.png");
 			background-repeat: no-repeat, no-repeat, repeat;
 			background-size: 100% 15em, 100% 15em, auto auto;
 			background-position: top center, bottom center, top left;
 		}
 
+		
+
+		.wrapper.style2 {
+			position: relative;
+			text-shadow: 1px 1px 0 #69616136;
+			background-color: #3d3a3a;
+			background-image: url("images/bg03.png"), url("images/bg02.png");
+			background-repeat: no-repeat, repeat;
+			background-size: 100% 15em, auto auto;
+			background-position: top center, top left;
+		}
+
 		.wrapper.style3 {
 			position: relative;
 			text-shadow: 1px 1px 0 #fff;
-			background-color: #fff;
+			background-color: #fff1f9;
 			background-image: url("images/bg03.png"), url("images/bg02.png");
 			background-repeat: no-repeat, repeat;
 			background-size: 100% 15em, auto auto;
@@ -2443,7 +2457,7 @@ input, select, textarea {
 	}
 
 	.pop-image:hover {
-	transform: scale(1.1); 
+	transform: scale(1.04); 
 	z-index: 10; 
 	}
 
